@@ -19,6 +19,14 @@ app.get('/', (req, res) => {
     rollbar.info('html was monitored successfully!')
 })
 
+app.get('/api/test', (req, res) => {
+    try {
+        nonExistentFunction();
+      } catch (error) {
+        console.error(error);
+        
+})
+
 
 const port = process.env.PORT || 5656
 
