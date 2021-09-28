@@ -24,7 +24,7 @@ app.get('/api/test', (req, res) => {
         nonExistentFunction();
       } catch (error) {
         console.error(error);
-        rollbar.error(error, "you suck at this")  
+        rollbar.error("you suck at this", error)  
       }      
       res.sendStatus(409)
 })
