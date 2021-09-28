@@ -24,7 +24,7 @@ app.get('/api/test', (req, res) => {
         nonExistentFunction();
       } catch (error) {
         console.error(error);
-        
+      }        
 })
 
 
