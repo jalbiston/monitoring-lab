@@ -8,5 +8,18 @@
 </head>
 <body>
     <h1>This is my monitoring app</h1>
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
+    <script>
+    axios.get('/api/test')
+        .then(res =>{
+            console.log(res.data)
+        })
+    </script>
 </body>
+
+
 </html>
